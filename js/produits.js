@@ -18,5 +18,6 @@ function renderHTML(data) {
         htmlString += "<h2>" + data[i].name + "</h2>";
         htmlString += "<h3>Description</h3>";
         htmlString += "<p>" + data[i].description + "</p>";
+        htmlString += "<p>" + data[i].price + "</p>";
     }
 }
