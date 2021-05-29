@@ -2,7 +2,7 @@ var homme = document.getElementById("homme");
 
 homme.addEventListener("click", function() {
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET', 'file:///C:/Users/melis/Documents/GitHub/Coiffeur/js/JSON.js');
+    ourRequest.open('GET', 'https://lestox.github.io/Coiffeur/js/JSON.js');
     ourRequest.onload = function() {
     var ourData = JSON.parse(ourRequest.responseText);
     console.log(ourData[0]);
