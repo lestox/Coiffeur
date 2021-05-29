@@ -15,9 +15,11 @@ function renderHTML(data) {
     var htmlString = "";
 
     for (i = 0; i < data.lenght; i++) {
+        htmlString += "<section id=" + data[i].name + ">";
         htmlString += "<h2>" + data[i].name + "</h2>";
         htmlString += "<h3>Description</h3>";
         htmlString += "<p>" + data[i].description + "</p>";
         htmlString += "<p>" + data[i].price + "</p>";
+        htmlString += "</section>";
     }
 }
