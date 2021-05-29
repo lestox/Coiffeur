@@ -6,7 +6,7 @@ btn.addEventListener("click", function() {
     ourRequest.open('GET', 'https://lestox.github.io/Coiffeur/js/JSON.json');
     ourRequest.onload = function() {
     var ourData = JSON.parse(ourRequest.responseText);
-    renderHTML(ourData);
+    console.log(ourData);
     };
     ourRequest.send();
 })
