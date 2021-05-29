@@ -14,7 +14,7 @@ btn.addEventListener("click", function() {
 function renderHTML(data) {
     var htmlString = "";
 
-    for (i = 0; i < data.lenght; i++) {
+    for (i = 0; i < data.length; i++) {
         htmlString += "<section id=" + data[i].name + ">";
         htmlString += "<h2>" + data[i].name + "</h2>";
         htmlString += "<h3>Description</h3>";
