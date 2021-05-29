@@ -1,0 +1,20 @@
+var services = [
+    {
+        "id": "1",
+        "name": "Coupe homme",
+        "description": "Tout type de coupe homme",
+        "price": "20€"
+    },
+    {
+        "id": "2",
+        "name": "Coupe femme",
+        "description": "Tout type de coupe femme",
+        "price": "25€"
+    },
+    {
+        "id": "3",
+        "name": "Coupe enfant",
+        "description": "Tout type de coupe enfant",
+        "price": "15€"
+    }
+]
