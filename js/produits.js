@@ -27,5 +27,5 @@ function renderHTML(data) {
 
 function essai() {
     var htmlString = "this is a test";
-    container.insertAdjacentHTML('beforend', htmlString);
+    container.insertAdjacentHTML(htmlString);
 }
