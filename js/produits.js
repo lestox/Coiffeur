@@ -6,7 +6,7 @@ btn.addEventListener("click", function() {
     ourRequest.open('GET', 'https://lestox.github.io/Coiffeur/js/JSON.json');
     ourRequest.onload = function() {
     var ourData = JSON.parse(ourRequest.responseText);
-    essai(ourData);
+    renderHTML(ourData);
     };
     ourRequest.send();
 })
@@ -21,11 +21,7 @@ function renderHTML(data) {
         htmlString += "<p>" + data[i].description + "</p>";
         htmlString += "<p>" + data[i].price + "</p>";
         htmlString += "</section>";
+        
+        container.insertAdjacentHTML("beforeend", htmlString);
     }
-}
-
-
-function essai() {
-    var htmlString = "this is a test";
-    container.insertAdjacentHTML(htmlString);
 }
