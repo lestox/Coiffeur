@@ -1,4 +1,7 @@
-var container = document.getElementById("container")
+var product1 = document.getElementById("1");
+var product2 = document.getElementById("2");
+var product3 = document.getElementById("3");
+
 var btn = document.getElementById("btn");
 
 btn.addEventListener("click", function() {
@@ -13,15 +16,29 @@ btn.addEventListener("click", function() {
 
 function renderHTML(data) {
     var htmlString = "";
-
     for (i = 0; i < data.length; i++) {
-        htmlString += "<section id=" + data[i].name + ">";
+        i = 0;
         htmlString += "<h2>" + data[i].name + "</h2>";
         htmlString += "<h3>Description</h3>";
         htmlString += "<p>" + data[i].description + "</p>";
         htmlString += "<p>" + data[i].price + "</p>";
-        htmlString += "</section>";
-        
-        container.insertAdjacentHTML("beforeend", htmlString);
+        product1.insertAdjacentHTML("beforeend", htmlString);
+        i++;
+
     }
+
+    btn.classList.add("hide-me");
+
 }
+            if (a==1) {
+                product1.insertAdjacentHTML("beforeend", htmlString);
+                a++;
+            }
+            else if (a==2) {
+                product2.insertAdjacentHTML("beforeend", htmlString);
+                a++;
+            }
+            else if (a==3) {
+                product3.insertAdjacentHTML("beforeend", htmlString);
+                a++;
+            }
