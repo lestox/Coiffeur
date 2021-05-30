@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Coupe homme",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus ante quis justo porta dapibus. Morbi sagittis elit id feugiat tristique. Mauris nisi lacus, finibus et congue eu, volutpat sit amet ex.",
+        "price": "20€"
+    },
+    {
+        "id": "2",
+        "name": "Coupe femme",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus ante quis justo porta dapibus. Morbi sagittis elit id feugiat tristique. Mauris nisi lacus, finibus et congue eu, volutpat sit amet ex.",
+        "price": "25€"
+    },
+    {
+        "id": "3",
+        "name": "Coupe enfant",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus ante quis justo porta dapibus. Morbi sagittis elit id feugiat tristique. Mauris nisi lacus, finibus et congue eu, volutpat sit amet ex.",
+        "price": "15€"
+    }
+]
