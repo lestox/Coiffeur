@@ -6,7 +6,7 @@ btn.addEventListener("click", function() {
     ourRequest.open('GET', 'https://lestox.github.io/Coiffeur/js/JSON.json');
     ourRequest.onload = function() {
     var ourData = JSON.parse(ourRequest.responseText);
-    renderHTML(ourData);
+    essai(ourData);
     };
     ourRequest.send();
 })
@@ -22,4 +22,10 @@ function renderHTML(data) {
         htmlString += "<p>" + data[i].price + "</p>";
         htmlString += "</section>";
     }
+}
+
+
+function essai(data) {
+    var htmlString = "this is a test";
+    container.insertAdjacentHTML('beforend', htmlString);
 }
