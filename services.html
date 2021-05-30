@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/services.css">
         <!-- Navbar -->
 	    <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/index.css">
         
     </head>
     <body>
@@ -30,7 +31,19 @@
                 <ul>
                     <li><a href="services.html">Nos services</a></li>
                     <li><a href="contact.html">Nous contacter</a></li>
-                    <li><a href="panier.html">Panier</a></li>
+                    <li>
+                        <!-- Panier -->
+                        <div class="dropdown">
+                            <div id="cart">
+                                <p><span id="in-cart-items-num">0</span> Articles</p>
+                            </div>
+                        
+                            <ul id="cart-dropdown" hidden>
+                                <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+                                <li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>
+                            </ul>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -39,19 +52,19 @@
         <button id="btn">Afficher nos services</button>
         <section id="container">
             <section id="1">
-                <button type="button" class="add-to-cart" data-id="1" data-name="Coupe homme" data-price="20,00">Ajouter au panier</button>
+                <button type="button" class="add-to-cart" data-id="1" data-name="Coupe homme" data-description="coupe simple homme" data-price="20,00">Ajouter au panier</button>
             </section>
             <section id="2">
-                <button type="button" class="add-to-cart" data-id="2" data-name="Coupe femme" data-price="25,00">Ajouter au panier</button>
+                <button type="button" class="add-to-cart" data-id="2" data-name="Coupe femme" data-description="coupe simple femme" data-price="25,00">Ajouter au panier</button>
             </section>
             <section id="3">
-                <button type="button" class="add-to-cart" data-id="3" data-name="Coupe enfant" data-price="15,00">Ajouter au panier</button>
+                <button type="button" class="add-to-cart" data-id="3" data-name="Coupe enfant" data-description="coupe simple enfant" data-price="15,00">Ajouter au panier</button>
             </section>
         </section>
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer id="footer">
         <!-- adresse -->
         <section>
             <p>20 rue de Victor Hugo</p>
@@ -67,13 +80,14 @@
         </section>
 
         <!-- Mentions -->
-        <section>
+        <section id="mentions">
             <span>Copyright 2021 Le Coiffeur</span>
-            <a>Mentions légales</a>
+            <a href="https://fr.wikipedia.org/wiki/Mentions_l%C3%A9gales">Mentions légales</a>
         </section>
     </footer>
     
     <!-- JS global -->
     <script src="js/produits.js"></script>
+    <script src="js/panier.js"></script>
 </body>
 </html>

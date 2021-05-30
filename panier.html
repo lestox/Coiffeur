@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/global.css">
         <!-- Navbar -->
 	    <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/index.css">
         
     </head>
     <body>
@@ -28,7 +29,19 @@
                 <ul>
                     <li><a href="services.html">Nos services</a></li>
                     <li><a href="contact.html">Nous contacter</a></li>
-                    <li><a href="panier.html">Panier</a></li>
+                    <li>
+                        <!-- Panier -->
+                        <div class="dropdown">
+                            <div id="cart">
+                                <p><span id="in-cart-items-num">0</span> Articles</p>
+                            </div>
+                        
+                            <ul id="cart-dropdown" hidden>
+                                <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+                                <li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>
+                            </ul>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -37,12 +50,36 @@
                 <thead>
                     <tr><th>Article</th><th>Prix</th><th>Quantité</th></tr>
                 </thead>
-                <tbody id="cart-tablebody"></tbody>
+                <tbody id="cart-tablebody">
+                </tbody>
             </table>
             
             <p>Sous total : <span class="subtotal"></span>€</p>
             
             <button id="confirm-command">Passer la commande</button>
         </main>
+            <!-- footer -->
+        <footer id="footer">
+            <!-- adresse -->
+            <section>
+                <p>20 rue de Victor Hugo</p>
+                <p>75000 Paris</p>
+                <p>01.00.00.00.00</p>
+            </section>
+
+            <!-- Réseaux sociaux -->
+            <section>
+                <a></a>
+                <a></a>
+                <a></a>
+            </section>
+
+            <!-- Mentions -->
+            <section id="mentions">
+                <span>Copyright 2021 Le Coiffeur</span>
+                <a href="https://fr.wikipedia.org/wiki/Mentions_l%C3%A9gales">Mentions légales</a>
+            </section>
+        </footer>
+        <script src="js/panier.js"></script>
     </body>
 </html>

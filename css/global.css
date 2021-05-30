@@ -9,6 +9,10 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.dropdown:hover > #cart-dropdown{
+    display: block;
+}
+
 /* Smartphone */
 @media screen and ( max-width: 600px ) {
 	/* Variables */

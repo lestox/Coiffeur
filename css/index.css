@@ -66,8 +66,36 @@ main p {
 	margin-bottom: 1em;
 }
 
-.dropdown:hover > #cart-dropdown{
-    display: block;
+.presentation {
+	background-color: lightblue;
+	padding: 2vh;
+	border-radius: 10px;
+	margin-top: 10vh;
+	height: 35vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+button {
+	background-color: #2274A5;
+	font-family: Arial;
+	border-radius:5px;
+	color: white;
+}
+
+#footer {
+	background-color: lightblue;
+	display: flex;
+	align-items: center;
+	flex-direction: colomn;
+	height: 15vh;
+	padding: 5vh;
+	margin-top: 10vh;
+}
+
+#mentions {
+	margin-left: 100vh;
 }
 
 
