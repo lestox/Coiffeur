@@ -66,6 +66,10 @@ main p {
 	margin-bottom: 1em;
 }
 
+.dropdown:hover > #cart-dropdown{
+    display: block;
+}
+
 
 /* Smartphone */
 @media screen and ( max-width: 600px ) {

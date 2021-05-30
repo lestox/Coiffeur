@@ -30,7 +30,19 @@
                 <ul>
                     <li><a href="services.html">Nos services</a></li>
                     <li><a href="contact.html">Nous contacter</a></li>
-                    <li><a href="panier.html">Panier</a></li>
+                    <li>
+                        <!-- Panier -->
+                        <div class="dropdown">
+                            <div id="cart">
+                                <p><span id="in-cart-items-num">0</span> Articles</p>
+                            </div>
+                        
+                            <ul id="cart-dropdown" hidden>
+                                <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+                                <li class="go-to-cart hidden"><a href="panier.html">Voir le panier</a></li>
+                            </ul>
+                        </li>
+                    </div>
                 </ul>
             </nav>
             <!-- Hero -->
