@@ -1,4 +1,6 @@
 #container {
     background-color: aqua;
     color: black;
+    height: 100px;
+    width: 400px;
 }
