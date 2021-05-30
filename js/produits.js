@@ -30,15 +30,3 @@ function renderHTML(data) {
     btn.classList.add("hide-me");
 
 }
-            if (a==1) {
-                product1.insertAdjacentHTML("beforeend", htmlString);
-                a++;
-            }
-            else if (a==2) {
-                product2.insertAdjacentHTML("beforeend", htmlString);
-                a++;
-            }
-            else if (a==3) {
-                product3.insertAdjacentHTML("beforeend", htmlString);
-                a++;
-            }
